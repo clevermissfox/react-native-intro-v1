@@ -2,6 +2,7 @@
 export const COLORS = {
   neutral100: "fff",
   neutral900: "#272727",
+  accent500: "#F9629F",
 };
 
 export const PADDING = {
@@ -13,6 +14,10 @@ export const PADDING = {
   xLarge: "2.5em",
 };
 
+export const RADIUS = {
+  button: "0.5em",
+};
+
 export const SIZE = {
-  wrapperWidth: "min(100%, 60ch)",
+  wrapperWidth: `min(100%, 60ch - (${PADDING.default} * 2))`,
 };

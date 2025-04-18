@@ -1,23 +1,38 @@
 // Using in place of css custom properties
 export const COLORS = {
-  neutral100: "fff",
-  neutral900: "#272727",
-  accent500: "#F9629F",
+  transparent: "#0000000",
+  neutral100: "#ffffff",
+  neutral500: "#e0e0e0",
+  neutral800: "#22394f",
+  neutral900: "#333",
+  accent500: "#f07941",
+};
+
+export const FONTSIZE = {
+  xSmall: 12,
+  small: 16,
+  medium: 22,
+  default: 24,
+  large: 32,
+  xLarge: 48,
+  xxLarge: 64,
 };
 
 export const PADDING = {
-  xSmall: "0.25em",
-  small: "0.5em",
-  medium: "1em",
-  default: "1.5em",
-  large: "2em",
-  xLarge: "2.5em",
+  xSmall: FONTSIZE.default * 0.25,
+  small: FONTSIZE.default * 0.5,
+  medium: FONTSIZE.default * 1,
+  default: FONTSIZE.default * 1.5,
+  large: FONTSIZE.default * 2,
+  xLarge: FONTSIZE.default * 2.5,
 };
 
 export const RADIUS = {
-  button: "0.5em",
+  button: FONTSIZE.small,
+  image: FONTSIZE.xSmall,
 };
 
 export const SIZE = {
-  wrapperWidth: `min(100%, 60ch - (${PADDING.default} * 2))`,
+  wrapperWidth: "100%",
+  wrapperMaxWidth: "600px",
 };

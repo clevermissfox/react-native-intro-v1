@@ -9,6 +9,7 @@ export const COLORS = {
 };
 
 export const FONTSIZE = {
+  xsSmall: 8,
   xSmall: 12,
   small: 16,
   medium: 22,
@@ -30,9 +31,13 @@ export const PADDING = {
 export const RADIUS = {
   button: FONTSIZE.small,
   image: FONTSIZE.xSmall,
+  pill: "100vw",
 };
 
 export const SIZE = {
   wrapperWidth: "100%",
-  wrapperMaxWidth: "600px",
+  wrapperMaxWidth: 600,
+  imageLarge: 100,
+  imageSmall: 72,
+  width100: "100%",
 };

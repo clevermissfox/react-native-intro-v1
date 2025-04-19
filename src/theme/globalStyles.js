@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 import { COLORS, FONTSIZE, PADDING, RADIUS, SIZE } from "./tokens";
 
 const globalStyles = StyleSheet.create({
+  // wrappers
   container: {
     flex: 1,
     backgroundColor: COLORS.neutral100,
@@ -17,6 +18,19 @@ const globalStyles = StyleSheet.create({
     width: SIZE.wrapperWidth,
     maxWidth: SIZE.wrapperMaxWidth,
     marginInline: "auto",
+  },
+  //utils
+  hide: {
+    display: "none",
+  },
+  relative: {
+    position: "relative",
+  },
+  maxH15: {
+    maxHeight: "15vh",
+  },
+  z50: {
+    zIndex: 50,
   },
   row: {
     display: "flex",
@@ -42,6 +56,16 @@ const globalStyles = StyleSheet.create({
   gapHalf: {
     gap: FONTSIZE.xSmall,
   },
+  gapQuarter: {
+    gap: FONTSIZE.xsSmall,
+  },
+  fsxxLarge: {
+    fontSize: FONTSIZE.xxLarge,
+  },
+  shadow2: {
+    elevation: 2,
+  },
+  // common components
   logo: {
     resizeMode: "contain",
     backgroundColor: "blue",
@@ -98,23 +122,96 @@ const globalStyles = StyleSheet.create({
     width: "80%",
   },
   // audio components
-
+  audioItem: {
+    backgroundColor: COLORS.neutral800,
+    padding: PADDING.medium,
+    borderRadius: RADIUS.image,
+  },
   audioImage: {
     display: "block",
     maxWidth: "100%",
-    width: FONTSIZE.xxLarge,
-    height: FONTSIZE.xxLarge,
     aspectRatio: 1,
     borderRadius: RADIUS.image,
+    border: "1px solid",
+    color: COLORS.neutral100,
+  },
+  audioImageSmall: {
+    width: SIZE.imageSmall,
+    height: SIZE.imageSmall,
+  },
+  audioImageLarge: {
+    flex: 1,
+    width: "100%",
+    height: SIZE.imageLarge,
+    aspectRatio: "revert",
   },
   audioItemContentWrapper: {
-    flex: 1,
+    flex: "1 1 auto",
   },
   audioTitle: {
+    color: COLORS.neutral100,
     fontSize: FONTSIZE.medium,
     fontWeight: "bold",
     textTransform: "uppercase",
     letterSpacing: 1,
+  },
+  popoverContentWrapper: {
+    alignItems: "stretch",
+    justifyContent: "center",
+    flex: 1,
+    padding: PADDING.medium,
+    width: SIZE.wrapperWidth,
+    maxWidth: SIZE.wrapperMaxWidth,
+    marginInline: "auto",
+  },
+  popover: {
+    backgroundColor: COLORS.neutral100,
+    borderRadius: RADIUS.image,
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    elevation: 2,
+    // flex: 1,
+    // width: SIZE.width100,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.3)", // optional for dimming background
+    justifyContent: "flex-end",
+  },
+  modalPopover: {
+    backgroundColor: COLORS.neutral100,
+    padding: PADDING.medium,
+    borderTopLeftRadius: RADIUS.image,
+    borderTopRightRadius: RADIUS.image,
+    maxHeight: "60%",
+  },
+  tags: {
+    color: COLORS.neutral800,
+    backgroundColor: COLORS.neutral100,
+    paddingInline: PADDING.small,
+    paddingBlock: PADDING.xSmall,
+    borderRadius: RADIUS.pill,
+  },
+  tag: {
+    color: COLORS.neutral800,
+    backgroundColor: COLORS.neutral100,
+    paddingInline: PADDING.small,
+    paddingBlock: PADDING.xSmall,
+    borderRadius: RADIUS.pill,
+  },
+  tagActive: {
+    color: COLORS.neutral100,
+    backgroundColor: COLORS.accent500,
+  },
+  tagText: {
+    fontSize: FONTSIZE.default,
+    fontWeight: 200,
+    color: COLORS.neutral800,
+  },
+  tagActiveText: {
+    color: COLORS.neutral100,
   },
 });
 

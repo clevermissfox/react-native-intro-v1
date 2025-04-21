@@ -1,5 +1,5 @@
 import { globalStyles } from "../src/theme/globalStyles";
-import { useRouter } from "expo-router";
+import { useRouter, Link } from "expo-router";
 import {
   Text,
   Image,
@@ -15,18 +15,21 @@ export default function Index() {
   return (
     <View style={globalStyles.container}>
       <View style={globalStyles.wrapper}>
-        {/* <Image
+        <Image
           source={require("../assets/icon.png")}
-          style={[globalStyles.logo]}
-        /> */}
+          style={[
+            globalStyles.logo,
+            {
+              width: width * 0.6, // 60% of screen width
+              height: width * 0.6,
+            },
+          ]}
+        />
 
         <View style={[globalStyles.aiEnd, globalStyles.buttonWrapper]}>
-          <Pressable
-            onPress={() => router.navigate("/intro")}
-            style={globalStyles.button}
-          >
+          <Link href="/intro" style={globalStyles.button}>
             <Text style={globalStyles.buttonText}>Start</Text>
-          </Pressable>
+          </Link>
         </View>
       </View>
     </View>

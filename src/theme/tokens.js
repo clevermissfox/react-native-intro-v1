@@ -2,6 +2,7 @@
 export const COLORS = {
   transparent: "#0000000",
   neutral100: "#ffffff",
+  neutral100A2: "rgba(255,255,255,0.2)",
   neutral500: "#e0e0e0",
   neutral800: "#22394f",
   neutral900: "#333",
@@ -31,7 +32,7 @@ export const PADDING = {
 export const RADIUS = {
   button: FONTSIZE.small,
   image: FONTSIZE.xSmall,
-  pill: "100vw",
+  pill: 1000,
 };
 
 export const SIZE = {

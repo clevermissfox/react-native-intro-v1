@@ -7,7 +7,6 @@ export default function TagList({
   onFilterChange,
   classes = null,
 }) {
-  console.log(allTags, "allTags", typeof allTags);
   return (
     <View style={[globalStyles.gapQuarter, ...classes]}>
       {allTags.map((tag) => {

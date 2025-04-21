@@ -62,13 +62,22 @@ const globalStyles = StyleSheet.create({
   fsxxLarge: {
     fontSize: FONTSIZE.xxLarge,
   },
+  taCen: {
+    textAlign: "center",
+  },
   shadow2: {
     elevation: 2,
+  },
+  clrN100: {
+    color: COLORS.neutral100,
+  },
+  bgAccent: {
+    backgroundColor: COLORS.accent500,
   },
   // common components
   logo: {
     resizeMode: "contain",
-    backgroundColor: "blue",
+    marginInline: "auto",
   },
   buttonWrapper: {
     alignItems: "stretch",
@@ -82,6 +91,7 @@ const globalStyles = StyleSheet.create({
     color: COLORS.neutral100,
     width: SIZE.wrapperWidth,
     alignSelf: "stretch",
+    textAlign: "center",
   },
   buttonText: {
     color: COLORS.neutral100,
@@ -132,7 +142,8 @@ const globalStyles = StyleSheet.create({
     maxWidth: "100%",
     aspectRatio: 1,
     borderRadius: RADIUS.image,
-    border: "1px solid",
+    borderWidth: 1,
+    borderColor: COLORS.neutral100,
     color: COLORS.neutral100,
   },
   audioImageSmall: {
@@ -140,13 +151,15 @@ const globalStyles = StyleSheet.create({
     height: SIZE.imageSmall,
   },
   audioImageLarge: {
-    flex: 1,
+    // flex: 1,
     width: "100%",
     height: SIZE.imageLarge,
-    aspectRatio: "revert",
+    aspectRatio: "auto",
   },
   audioItemContentWrapper: {
-    flex: "1 1 auto",
+    flexGrow: 1,
+    flexShrink: 1,
+    flexBasis: "auto",
   },
   audioTitle: {
     color: COLORS.neutral100,
@@ -154,6 +167,12 @@ const globalStyles = StyleSheet.create({
     fontWeight: "bold",
     textTransform: "uppercase",
     letterSpacing: 1,
+  },
+  sliderThumb: {
+    backgroundColor: COLORS.accent500,
+  },
+  sliderTrack: {
+    height: 10,
   },
   popoverContentWrapper: {
     alignItems: "stretch",
@@ -208,6 +227,7 @@ const globalStyles = StyleSheet.create({
   tagText: {
     fontSize: FONTSIZE.default,
     fontWeight: 200,
+    // lineHeight: FONTSIZE.default,
     color: COLORS.neutral800,
   },
   tagActiveText: {

@@ -1,5 +1,5 @@
 import { globalStyles } from "../theme/globalStyles";
-import { router } from "expo-router";
+import { Link, router } from "expo-router";
 import {
   View,
   Text,
@@ -8,6 +8,7 @@ import {
   useWindowDimensions,
 } from "react-native";
 import TagList from "./TagList";
+import { useEffect } from "react";
 
 export default function AudioItem({ item, currentFilter, onFilterChange }) {
   const { width } = useWindowDimensions();
@@ -18,9 +19,7 @@ export default function AudioItem({ item, currentFilter, onFilterChange }) {
       onPress={() => {
         router.push({
           pathname: "filePlayer",
-          params: {
-            id: item.id,
-          },
+          params: { id: item.id.toString() },
         });
       }}
       style={[

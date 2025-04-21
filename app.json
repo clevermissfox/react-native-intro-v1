@@ -2,6 +2,7 @@
   "expo": {
     "name": "react-native-intro-v1",
     "slug": "react-native-intro-v1",
+    "scheme": "react-native-intro-v1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/app_icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.clevermissfox.reactnativeintrov1"
@@ -40,8 +41,6 @@
     "updates": {
       "url": "https://u.expo.dev/4cad0772-1fab-4c9d-8123-c806406cf3a2"
     },
-    "plugins": [
-      "expo-router"
-    ]
+    "plugins": ["expo-router"]
   }
 }

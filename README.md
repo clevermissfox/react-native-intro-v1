@@ -19,3 +19,8 @@
 - The following commands
 - eas build --profile production --platform android
 - eas build --profile production --platform ios
+
+# Production Preview - Custom Build
+
+- to get a production ready build (that bundles the javascript) but also spits out an apk for android instead of an app store file
+- eas build --profile prod-preview --platform android
